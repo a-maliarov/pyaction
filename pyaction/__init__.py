@@ -21,8 +21,10 @@ of the field and contain imports of the main objects within this field to be
 operated by the end user.
 2. The file called "objects.py" should contain all the main objects of the
 field to be used by the end user.
-3. he file called "utils.py" should contain all the utilities to be used by
+3. The file called "utils.py" should contain all the utilities to be used by
 the "objects.py" and not the end user.
+4. The file called "exceptions.py" should contain all the exceptions to be
+used by both developers and the end users.
 
 """
 
