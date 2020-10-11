@@ -33,8 +33,7 @@ requires = [
 ]
 
 modules = [
-    'pyaction.general.objects',
-    'pyaction.general.utils'
+    'pyaction.general.objects'
 ]
 
 #--------------------------------------------------------------------------------------------------------------
