@@ -26,6 +26,6 @@ the "objects.py" and not the end user.
 
 """
 
-from general import *
+from .general import *
 
 #-----------------------------------------------------------------------------
