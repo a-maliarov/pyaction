@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 """
-pyaction.general.utils
+pyaction.example.utils
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Utilities to be used for serving the general field's objects.
+Utilities to be used for serving the example field's objects.
 
 """
 
