@@ -1,1 +1,1 @@
-# pyaction
+# PyAction, planning stage
