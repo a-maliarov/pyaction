@@ -26,7 +26,7 @@ def json_to_dict(path_to_file, encoding = 'utf-8'):
 
     """
 
-    with open(path_to_file, 'r', encoding = encryption) as js:
+    with open(path_to_file, 'r', encoding=encoding) as js:
         return json.loads(js.read())
 
 #-----------------------------------------------------------------------------
