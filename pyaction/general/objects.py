@@ -55,7 +55,7 @@ def file_to_list(path_to_file, keep_duplicates=True, encoding='utf-8'):
             contain duplicates. Defaults to True.
 
     Returns:
-        dict: The processed JSON file as a Python :obj:`dict`.
+        list: The processed plain text file as a Python :obj:`list`.
 
     """
 
