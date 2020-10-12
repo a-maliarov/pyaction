@@ -8,7 +8,9 @@ The main objects of the general field.
 
 """
 
-__all__ = ['json_to_dict', 'dict_to_json', 'file_to_list']
+__all__ = [
+    'json_to_dict', 'dict_to_json', 'file_to_list', 'write_list_as_line'
+]
 
 import json
 
@@ -47,9 +49,9 @@ def file_to_list(path_to_file, keep_duplicates=True, encoding='utf-8'):
 
     Args:
         path_to_file (str): A path to plain text file.
-        encoding (str): File's encoding. Defaults to "utf-8".
         keep_duplicates (bool): If set to False, the output list will not
             contain duplicates. Defaults to True.
+        encoding (str): File's encoding. Defaults to "utf-8".
 
     Returns:
         list: The processed plain text file as a Python :obj:`list`.
@@ -61,5 +63,28 @@ def file_to_list(path_to_file, keep_duplicates=True, encoding='utf-8'):
     handler.close()
 
     return lines if keep_duplicates else list(dict.fromkeys(lines))
+
+def write_list_as_line(path_to_file, data, delimiter=',', headers=False, encoding='utf-8'):
+    """Writes Python :obj:`list` as a plain text line.
+
+    Args:
+        path_to_file (str): A path to output file.
+        data (list): List to be stored.
+        delimiter (str): Delimiter for the list elements.
+        headers (bool): If set to True, the output line will overwrite
+            the file. Defaults to False.
+        encoding (str): File's encoding. Defaults to "utf-8".
+
+    Returns:
+        list: The processed plain text file as a Python :obj:`list`.
+
+    """
+
+    mode = {0: 'a', 1: 'w'}
+    data_to_write = [str(element) for element in data]
+
+    handler = open(path_to_file, mode=mode[headers], encoding=encoding)
+    handler.write(delimiter.join(data_to_write) + '\n')
+    handler.close()
 
 #-----------------------------------------------------------------------------

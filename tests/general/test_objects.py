@@ -35,4 +35,26 @@ class TestGeneralObjects(unittest.TestCase):
         output = file_to_list(os.path.join(files, file_name), False)
         self.assertEqual(output, ['1', '2', '3'])
 
+    def test_write_list_as_line(self):
+        example_list = [1, 2]
+        file_name = 'example_txt_2.txt'
+        file_path = os.path.join(files, file_name)
+        for i in range(2):
+            write_list_as_line(file_path, data=example_list)
+        result = file_name in os.listdir(files)
+        lines_number = len(file_to_list(file_path))
+        os.remove(file_path)
+        self.assertEqual(lines_number, 2)
+
+    def test_write_list_as_line_as_headers(self):
+        example_list = [1, 2]
+        file_name = 'example_txt_2.txt'
+        file_path = os.path.join(files, file_name)
+        for i in range(2):
+            write_list_as_line(file_path, data=example_list, headers=True)
+        result = file_name in os.listdir(files)
+        lines_number = len(file_to_list(file_path))
+        os.remove(file_path)
+        self.assertEqual(lines_number, 1)
+
 #-----------------------------------------------------------------------------
