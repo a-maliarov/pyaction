@@ -75,9 +75,6 @@ def write_list_as_line(path_to_file, data, delimiter=',', headers=False, encodin
             the file. Defaults to False.
         encoding (str): File's encoding. Defaults to "utf-8".
 
-    Returns:
-        list: The processed plain text file as a Python :obj:`list`.
-
     """
 
     mode = {0: 'a', 1: 'w'}
