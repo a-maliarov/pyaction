@@ -37,9 +37,6 @@ def dict_to_json(path_to_file, data, encoding='utf-8'):
         data(dict): Dictionary to be stored.
         encoding (str): File's encoding. Defaults to "utf-8".
 
-    Returns:
-        dict: The processed JSON file as a Python :obj:`dict`.
-
     """
 
     with open(path_to_file, 'w', encoding=encoding) as js:
