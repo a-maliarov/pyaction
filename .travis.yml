@@ -21,7 +21,7 @@ before_script:
   - pip install codecov
 
 script:
-  - coverage run tests/test_main.py
+  - coverage run tests/test_pyaction.py
 
 after_success:
   - codecov
