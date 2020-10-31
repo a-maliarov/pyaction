@@ -9,3 +9,5 @@
 + **Version 0.0.5**:
   1. Add `multiprocessing` field.
   2. Add `multiprocessing.chunk` function.
+  3. Add `datetime` field.
+  4. Add `create_dates_list` and `time_until_end_of_day` functions to `datetime` field.

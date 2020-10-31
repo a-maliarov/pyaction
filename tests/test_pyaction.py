@@ -2,6 +2,7 @@
 
 from general import TestGeneralObjects
 from multiprocessing_ import TestMultiprocessingObjects
+from datetime_ import TestDatetimeObjects
 import unittest
 
 #-----------------------------------------------------------------------------
