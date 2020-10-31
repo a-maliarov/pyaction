@@ -11,3 +11,5 @@
   2. Add `multiprocessing.chunk` function.
   3. Add `datetime` field.
   4. Add `create_dates_list` and `time_until_end_of_day` functions to `datetime` field.
+  5. Add `beautifulsoup` field.
+  6. Add `beautifulsoup.get_xpath` function.
