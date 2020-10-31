@@ -35,7 +35,8 @@ requires = [
 modules = [
     'pyaction.general.objects',
     'pyaction.multiprocessing_.objects',
-    'pyaction.datetime_.objects'
+    'pyaction.datetime_.objects',
+    'pyaction.beautifulsoup_.objects'
 ]
 
 #--------------------------------------------------------------------------------------------------------------
