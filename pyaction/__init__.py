@@ -29,5 +29,6 @@ used by both developers and the end users.
 """
 
 from .general import *
+from .multiprocessing_ import *
 
 #-----------------------------------------------------------------------------

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from general import TestGeneralObjects
+from multiprocessing_ import TestMultiprocessingObjects
 import unittest
 
 #-----------------------------------------------------------------------------
