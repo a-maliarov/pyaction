@@ -10,9 +10,24 @@ The main objects of the beautifulsoup field.
 
 __all__ = ['get_xpath']
 
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    from beautifulsoup4 import BeautifulSoup
+
 #-----------------------------------------------------------------------------
 
 def get_xpath(element):
+    """
+    Finds xpath of a BS4 element.
+
+    Args:
+        element (BeautifulSoup): BS4 element which xpath it to be found.
+
+    Returns:
+        str: The xpath.
+
+    """
 
     def get_index(el):
         prev_sibs = [tag for tag in el.previous_siblings if tag.name == el.name]
