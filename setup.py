@@ -22,7 +22,7 @@ def readme(logo_end_line=0):
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Development Status :: 1 - Planning",
+    "Development Status :: 5 - Production/Stable",
     "Natural Language :: English",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
