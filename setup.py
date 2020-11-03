@@ -11,7 +11,7 @@ with open(os.path.join(here, 'pyaction', '__version__.py'), 'r', encoding='utf-8
     file_data = [i.replace('\n', '').replace('\'', '').split(' = ') for i in f.readlines()]
     about = {k: v for k, v in file_data}
 
-def readme(logo_end_line=0):
+def readme(logo_end_line=14):
     """Extracts the logo from README file before pushing to PyPi."""
 
     with open('README.md', 'r', encoding='utf-8') as fh:
