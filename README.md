@@ -22,3 +22,10 @@ PyAction is a module dedicated to **eliminate rewriting the same code from proje
 [![PyPi version](https://img.shields.io/pypi/v/pyaction)](https://pypi.org/project/pyaction/)
 
 ---
+
+## Installation
+You can simply install the library from PyPi using pip.
+
+```bash
+pip install pyaction
+```
