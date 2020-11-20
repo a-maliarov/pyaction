@@ -85,3 +85,25 @@ def write_list_as_line(path_to_file, data, delimiter=',', headers=False, encodin
     handler.close()
 
 #-----------------------------------------------------------------------------
+
+# from copy import copy
+# result = []
+# path = []
+# def find_path(dict_obj,key,i=None):
+#     for k,v in dict_obj.items():
+#         path.append(k)
+#         if isinstance(v,dict):
+#             find_path(v, key,i)
+#         if isinstance(v,list):
+#             for i,item in enumerate(v):
+#                 path.append(i)
+#                 if isinstance(item,dict):
+#                     find_path(item, key,i)
+#                 path.pop()
+#         if k == key:
+#             result.append(copy(path))
+#         if path != []:
+#             path.pop()
+# find_path(b.yelp_dict, 'category_paths_to_root')
+# print(result)
+# input("C?")
