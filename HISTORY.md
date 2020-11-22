@@ -13,3 +13,4 @@
   4. Add `create_dates_list` and `time_until_end_of_day` functions to `datetime` field.
   5. Add `beautifulsoup` field.
   6. Add `beautifulsoup.get_xpath` function.
+  7. Add `csv_to_xlsx` function.
