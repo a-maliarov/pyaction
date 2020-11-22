@@ -84,6 +84,17 @@ def write_list_as_line(path_to_file, data, delimiter=',', headers=False, encodin
     handler.write(delimiter.join(data_to_write) + '\n')
     handler.close()
 
+def csv_to_xlsx(csv_path, xlsx_path):
+
+    workbook = Workbook(xlsx_path)
+    worksheet = workbook.add_worksheet()
+    with open(file_path, 'rt', encoding='utf8') as f:
+        reader = csv.reader(f)
+        for r, row in enumerate(reader):
+            for c, col in enumerate(row):
+                worksheet.write(r, c, col)
+    workbook.close()
+
 #-----------------------------------------------------------------------------
 
 # from copy import copy
