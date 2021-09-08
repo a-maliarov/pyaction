@@ -31,7 +31,7 @@ classifiers = [
 
 requires = [
     'bs4 ~= 0.0.1',
-    'beautifulsoup4 ~= 4.9.3',
+    'beautifulsoup4 >= 4.9.3,< 4.11.0',
 ]
 
 modules = [
